@@ -1,0 +1,7 @@
+n=2: checked 0, equality 0
+n=3: checked 1, equality 1
+n=4: checked 10, equality 9
+n=5: checked 253, equality 122
+n=6: checked 12068, equality 8290
+Total graphs of minimum degree at least two: 12332
+P4 (minimum degree one): Slater=2, minimum maximal matching=1

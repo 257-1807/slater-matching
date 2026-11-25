@@ -1,0 +1,10 @@
+$ lake env lean -DwarningAsError=true SlaterMatching.lean
+'SlaterMatching.slater_le_card_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SlaterMatching.slater_le_minMaximalMatching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SlaterMatching.eulerian_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SlaterMatching.pathFour_minDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SlaterMatching.pathFour_minMaximalMatchingNumber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SlaterMatching.pathFour_slaterNumber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SlaterMatching.pathFour_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SlaterMatching.conjecture_d7f95ad0' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit status: 0

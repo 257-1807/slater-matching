@@ -1,0 +1,47 @@
+$ lean --version
+Lean (version 4.36.0, arm64-apple-darwin24.6.0, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+exit status: 0
+
+$ lake --version
+Lake version 5.0.0-src+611c117 (Lean version 4.36.0)
+exit status: 0
+
+$ git -C .lake/packages/mathlib rev-parse HEAD
+fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+exit status: 0
+
+$ lake --wfail build
+✔ [6446/6458] Built SlaterMatching.Counting (2.1s)
+✔ [6448/6458] Built SlaterMatching.Matching (2.4s)
+✔ [6450/6458] Built SlaterMatching.Slater (2.6s)
+ℹ [6452/6458] Built SlaterMatching.Bound (2.3s)
+info: SlaterMatching/Bound.lean:58:0: 'SlaterMatching.slater_le_minMaximalMatching' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching/Bound.lean:59:0: 'SlaterMatching.conjecture_d7f95ad0' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [6454/6458] Built SlaterMatching.Sharpness (2.4s)
+ℹ [6456/6458] Built SlaterMatching (1.0s)
+info: SlaterMatching.lean:6:0: 'SlaterMatching.slater_le_card_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:7:0: 'SlaterMatching.slater_le_minMaximalMatching' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:8:0: 'SlaterMatching.eulerian_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:9:0: 'SlaterMatching.pathFour_minDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:10:0: 'SlaterMatching.pathFour_minMaximalMatchingNumber' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:11:0: 'SlaterMatching.pathFour_slaterNumber' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:12:0: 'SlaterMatching.pathFour_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:13:0: 'SlaterMatching.conjecture_d7f95ad0' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (6458 jobs).
+exit status: 0
+
+$ lake build
+ℹ [6436/6458] Replayed SlaterMatching.Bound
+info: SlaterMatching/Bound.lean:58:0: 'SlaterMatching.slater_le_minMaximalMatching' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching/Bound.lean:59:0: 'SlaterMatching.conjecture_d7f95ad0' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6456/6458] Replayed SlaterMatching
+info: SlaterMatching.lean:6:0: 'SlaterMatching.slater_le_card_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:7:0: 'SlaterMatching.slater_le_minMaximalMatching' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:8:0: 'SlaterMatching.eulerian_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:9:0: 'SlaterMatching.pathFour_minDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:10:0: 'SlaterMatching.pathFour_minMaximalMatchingNumber' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:11:0: 'SlaterMatching.pathFour_slaterNumber' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:12:0: 'SlaterMatching.pathFour_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SlaterMatching.lean:13:0: 'SlaterMatching.conjecture_d7f95ad0' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (6458 jobs).
+exit status: 0

@@ -1,0 +1,14 @@
+name = "slater-matching"
+version = "1.0.0"
+defaultTargets = ["SlaterMatching"]
+
+[leanOptions]
+warningAsError = true
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.36.0"
+
+[[lean_lib]]
+name = "SlaterMatching"

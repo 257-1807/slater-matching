@@ -1,0 +1,19 @@
+$ lake env leanchecker --verbose SlaterMatching.Slater
+replaying SlaterMatching.Slater
+exit status: 0
+
+$ lake env leanchecker --verbose SlaterMatching.Matching
+replaying SlaterMatching.Matching
+exit status: 0
+
+$ lake env leanchecker --verbose SlaterMatching.Counting
+replaying SlaterMatching.Counting
+exit status: 0
+
+$ lake env leanchecker --verbose SlaterMatching.Bound
+replaying SlaterMatching.Bound
+exit status: 0
+
+$ lake env leanchecker --verbose SlaterMatching.Sharpness
+replaying SlaterMatching.Sharpness
+exit status: 0

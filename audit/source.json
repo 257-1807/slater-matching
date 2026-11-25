@@ -1,0 +1,28 @@
+{
+  "upstream": "https://github.com/JanPastorek/AutoGraphForge",
+  "commit": "4d1a8afc99447cacd2328cca20e47b6493e8dbc5",
+  "statement_file": "results/cegis_results.json",
+  "rank_file": "results/audit_top_normalised.json",
+  "records": [
+    {
+      "id": "4b6081e7",
+      "statement": "(((nontrivial) ∧ (eulerian)) ∧ (planar)) ⇒ slater ≤ min_maximal_matching_number",
+      "status": "proposed",
+      "lean_statement": null,
+      "lean_proof": null,
+      "rank_all": 597,
+      "rank_novel": 470,
+      "known_as": null
+    },
+    {
+      "id": "d7f95ad0",
+      "statement": "(((nontrivial) ∧ (K_4_free)) ∧ (eulerian)) ⇒ slater ≤ min_maximal_matching_number",
+      "status": "proposed",
+      "lean_statement": null,
+      "lean_proof": null,
+      "rank_all": 605,
+      "rank_novel": 478,
+      "known_as": null
+    }
+  ]
+}
